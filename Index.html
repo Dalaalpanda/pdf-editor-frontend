@@ -1,4 +1,4 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -111,7 +111,7 @@
         // Show Loading
         document.getElementById("loading").classList.remove("d-none");
 
-        fetch("/process-pdf", {
+        fetch("https://pdf-editor-backend-ro7u.onrender.com/process-pdf", {  // ✅ Backend URL Updated
             method: "POST",
             body: formData
         })
@@ -133,6 +133,7 @@
         });
     }
 </script>
+
 
 </body>
 </html>
